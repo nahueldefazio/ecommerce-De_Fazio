@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/muebles-De_Fazio/static/css/main.a1341153.chunk.css",
+    "main.css": "/muebles-De_Fazio/static/css/main.1f954233.chunk.css",
     "main.js": "/muebles-De_Fazio/static/js/main.cac07721.chunk.js",
     "main.js.map": "/muebles-De_Fazio/static/js/main.cac07721.chunk.js.map",
     "runtime-main.js": "/muebles-De_Fazio/static/js/runtime-main.2a700c71.js",
@@ -10,13 +10,13 @@
     "static/js/3.b20cc29d.chunk.js": "/muebles-De_Fazio/static/js/3.b20cc29d.chunk.js",
     "static/js/3.b20cc29d.chunk.js.map": "/muebles-De_Fazio/static/js/3.b20cc29d.chunk.js.map",
     "index.html": "/muebles-De_Fazio/index.html",
-    "static/css/main.a1341153.chunk.css.map": "/muebles-De_Fazio/static/css/main.a1341153.chunk.css.map",
+    "static/css/main.1f954233.chunk.css.map": "/muebles-De_Fazio/static/css/main.1f954233.chunk.css.map",
     "static/js/2.43e2d61e.chunk.js.LICENSE.txt": "/muebles-De_Fazio/static/js/2.43e2d61e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2a700c71.js",
     "static/js/2.43e2d61e.chunk.js",
-    "static/css/main.a1341153.chunk.css",
+    "static/css/main.1f954233.chunk.css",
     "static/js/main.cac07721.chunk.js"
   ]
 }
