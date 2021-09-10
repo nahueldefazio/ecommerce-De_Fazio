@@ -1,5 +1,5 @@
 # Bibliotecas utilizadas:
-' '
+Por ahora solo utilice Boostrap y Google Icons pero sin instalacion de bibliotecas solo importandolas desde el index.html
 
 # Getting Started with Create React App
 
