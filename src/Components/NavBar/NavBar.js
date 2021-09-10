@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import logo from '../../images/muebles.png'
 import '../NavBar/NavBar.css'
+import CartWidget from "./CartWidget/CartWidget";
 
 
 function NavBar(props) {
@@ -33,6 +34,7 @@ function NavBar(props) {
                                     <li><a className="dropdown-item" href="#">Dormitorio</a></li>
                                 </ul>
                             </li>
+                            <CartWidget/>
                         </ul>
                     </div>
                 </div>
