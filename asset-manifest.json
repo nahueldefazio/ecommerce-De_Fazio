@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/muebles-De_Fazio/static/css/main.4033da88.chunk.css",
-    "main.js": "/muebles-De_Fazio/static/js/main.0822d59a.chunk.js",
-    "main.js.map": "/muebles-De_Fazio/static/js/main.0822d59a.chunk.js.map",
-    "runtime-main.js": "/muebles-De_Fazio/static/js/runtime-main.79829a76.js",
-    "runtime-main.js.map": "/muebles-De_Fazio/static/js/runtime-main.79829a76.js.map",
-    "static/js/2.b740c667.chunk.js": "/muebles-De_Fazio/static/js/2.b740c667.chunk.js",
-    "static/js/2.b740c667.chunk.js.map": "/muebles-De_Fazio/static/js/2.b740c667.chunk.js.map",
-    "static/js/3.6434fa1d.chunk.js": "/muebles-De_Fazio/static/js/3.6434fa1d.chunk.js",
-    "static/js/3.6434fa1d.chunk.js.map": "/muebles-De_Fazio/static/js/3.6434fa1d.chunk.js.map",
+    "main.css": "/muebles-De_Fazio/static/css/main.1d59d66d.chunk.css",
+    "main.js": "/muebles-De_Fazio/static/js/main.030b0603.chunk.js",
+    "main.js.map": "/muebles-De_Fazio/static/js/main.030b0603.chunk.js.map",
+    "runtime-main.js": "/muebles-De_Fazio/static/js/runtime-main.4f869712.js",
+    "runtime-main.js.map": "/muebles-De_Fazio/static/js/runtime-main.4f869712.js.map",
+    "static/js/2.96d6957b.chunk.js": "/muebles-De_Fazio/static/js/2.96d6957b.chunk.js",
+    "static/js/2.96d6957b.chunk.js.map": "/muebles-De_Fazio/static/js/2.96d6957b.chunk.js.map",
+    "static/js/3.431785aa.chunk.js": "/muebles-De_Fazio/static/js/3.431785aa.chunk.js",
+    "static/js/3.431785aa.chunk.js.map": "/muebles-De_Fazio/static/js/3.431785aa.chunk.js.map",
     "index.html": "/muebles-De_Fazio/index.html",
-    "static/css/main.4033da88.chunk.css.map": "/muebles-De_Fazio/static/css/main.4033da88.chunk.css.map",
-    "static/js/2.b740c667.chunk.js.LICENSE.txt": "/muebles-De_Fazio/static/js/2.b740c667.chunk.js.LICENSE.txt"
+    "static/css/main.1d59d66d.chunk.css.map": "/muebles-De_Fazio/static/css/main.1d59d66d.chunk.css.map",
+    "static/js/2.96d6957b.chunk.js.LICENSE.txt": "/muebles-De_Fazio/static/js/2.96d6957b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.79829a76.js",
-    "static/js/2.b740c667.chunk.js",
-    "static/css/main.4033da88.chunk.css",
-    "static/js/main.0822d59a.chunk.js"
+    "static/js/runtime-main.4f869712.js",
+    "static/js/2.96d6957b.chunk.js",
+    "static/css/main.1d59d66d.chunk.css",
+    "static/js/main.030b0603.chunk.js"
   ]
 }
