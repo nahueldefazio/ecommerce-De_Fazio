@@ -1,0 +1,15 @@
+.item-detail-container{
+    display: flex;
+}
+
+.image-container{
+    max-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.description-container{
+    margin-left: 10px;
+}

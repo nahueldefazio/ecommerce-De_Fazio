@@ -1,22 +1,22 @@
 import React, {Fragment} from 'react';
-import ItemCount from "../ItemCount/ItemCount";
 import './Item.css'
-import imagen from '../../images/muebles.png'
+import {Link} from "react-router-dom";
 
 function Item(props) {
-    //{titulo: "", precio:""
+
     return (
         <Fragment>
-            <div className="card " style={{width: "18rem"}}>
-                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                <img className="card-img-top" src={"..."} alt="Card image cap"/>
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <ItemCount stock={5}
-                                   initial={1} />
-                    </div>
+            <div className="card m-4" style={{width: "18rem"}}>
+                <img src={props.image} className="card-img-top" alt="..." style={{width: "250px", height: "150px"}}/>
+                <div className="card-body">
+                    <h5 className="card-title">
+                        {props.title}
+                    </h5>
+                    <li className="list-group-item mb-3">{props.price} U$D</li>
+                    <Link to={`/products/${props.id}`} className="btn btn-primary">
+                        More...
+                    </Link>
+                </div>
             </div>
         </Fragment>
     )

@@ -1,19 +1,14 @@
 import './App.css';
-import NavBar from "./Components/NavBar/NavBar";
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import {Fragment} from "react";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
 
-  return (
-      <Fragment>
-          <header>
-              <NavBar/>
-          </header>
-          <ItemListContainer/>
-
-      </Fragment>
-  );
+    return (
+        <Fragment>
+            <AppRoutes/>
+        </Fragment>
+    );
 }
 
 export default App;

@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import logo from '../../images/muebles.png'
 import '../NavBar/NavBar.css'
 import CartWidget from "./CartWidget/CartWidget";
+import {NavLink} from "react-router-dom";
 
 
 function NavBar(props) {
@@ -20,25 +21,27 @@ function NavBar(props) {
                         <ul className="navbar-nav subMenus">
                             <li className="nav-item">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <NavLink className="nav-link active" aria-current="page" to={'/'}>Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="nav-link" href="#">Muebles Exterior</a>
+                                <NavLink className="nav-link active" aria-current="page" to={'/electronics'}>Electronics</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <NavLink className="nav-link"  to={'/jewlery'}>Jewelery</NavLink>
                             </li>
                             <li className="nav-item dropdown">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Muebles Interior
+                                <a className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    Clothing
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <li><a className="dropdown-item" href="#">Living</a></li>
+                                    <li><NavLink className="dropdown-item"  to={'/menclothing'}>Men Clothing</NavLink></li>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <li><a className="dropdown-item" href="#">Cocina</a></li>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <li><a className="dropdown-item" href="#">Dormitorio</a></li>
+                                    <li><NavLink className="dropdown-item"  to={'/womenclothing'}>Women Clothing</NavLink></li>
                                 </ul>
                             </li>
                             <CartWidget/>

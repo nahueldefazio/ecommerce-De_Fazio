@@ -5,13 +5,16 @@ function ItemList(props) {
 
     return (
         <Fragment>
-            <ul>
-                {props.productos.map((productos, index)=>{
-                    return <Item producto={productos}/>
-                })}
-            </ul>
+            {props.listaProductos.map((productos, index) => {
+                return <Item key={productos.id}
+                             id={productos.id}
+                             title={productos.title}
+                             image={productos.image}
+                             price={productos.price}
+                             description={productos.description}/>
+            })}
         </Fragment>
-    );
+    )
 }
 
 export default ItemList;
