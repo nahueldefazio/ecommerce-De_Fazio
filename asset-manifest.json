@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/muebles-De_Fazio/static/css/main.8fa47d30.chunk.css",
-    "main.js": "/muebles-De_Fazio/static/js/main.cc13bab8.chunk.js",
-    "main.js.map": "/muebles-De_Fazio/static/js/main.cc13bab8.chunk.js.map",
-    "runtime-main.js": "/muebles-De_Fazio/static/js/runtime-main.6d36cb1d.js",
-    "runtime-main.js.map": "/muebles-De_Fazio/static/js/runtime-main.6d36cb1d.js.map",
-    "static/js/2.260645ea.chunk.js": "/muebles-De_Fazio/static/js/2.260645ea.chunk.js",
-    "static/js/2.260645ea.chunk.js.map": "/muebles-De_Fazio/static/js/2.260645ea.chunk.js.map",
-    "static/js/3.400dbddc.chunk.js": "/muebles-De_Fazio/static/js/3.400dbddc.chunk.js",
-    "static/js/3.400dbddc.chunk.js.map": "/muebles-De_Fazio/static/js/3.400dbddc.chunk.js.map",
-    "index.html": "/muebles-De_Fazio/index.html",
-    "static/css/main.8fa47d30.chunk.css.map": "/muebles-De_Fazio/static/css/main.8fa47d30.chunk.css.map",
-    "static/js/2.260645ea.chunk.js.LICENSE.txt": "/muebles-De_Fazio/static/js/2.260645ea.chunk.js.LICENSE.txt"
+    "main.css": "/ecommerce-De_Fazio/static/css/main.8fa47d30.chunk.css",
+    "main.js": "/ecommerce-De_Fazio/static/js/main.b0c7c2d9.chunk.js",
+    "main.js.map": "/ecommerce-De_Fazio/static/js/main.b0c7c2d9.chunk.js.map",
+    "runtime-main.js": "/ecommerce-De_Fazio/static/js/runtime-main.1d7759b8.js",
+    "runtime-main.js.map": "/ecommerce-De_Fazio/static/js/runtime-main.1d7759b8.js.map",
+    "static/js/2.260645ea.chunk.js": "/ecommerce-De_Fazio/static/js/2.260645ea.chunk.js",
+    "static/js/2.260645ea.chunk.js.map": "/ecommerce-De_Fazio/static/js/2.260645ea.chunk.js.map",
+    "static/js/3.400dbddc.chunk.js": "/ecommerce-De_Fazio/static/js/3.400dbddc.chunk.js",
+    "static/js/3.400dbddc.chunk.js.map": "/ecommerce-De_Fazio/static/js/3.400dbddc.chunk.js.map",
+    "index.html": "/ecommerce-De_Fazio/index.html",
+    "static/css/main.8fa47d30.chunk.css.map": "/ecommerce-De_Fazio/static/css/main.8fa47d30.chunk.css.map",
+    "static/js/2.260645ea.chunk.js.LICENSE.txt": "/ecommerce-De_Fazio/static/js/2.260645ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d36cb1d.js",
+    "static/js/runtime-main.1d7759b8.js",
     "static/js/2.260645ea.chunk.js",
     "static/css/main.8fa47d30.chunk.css",
-    "static/js/main.cc13bab8.chunk.js"
+    "static/js/main.b0c7c2d9.chunk.js"
   ]
 }
