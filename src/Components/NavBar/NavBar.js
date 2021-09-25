@@ -21,15 +21,15 @@ function NavBar(props) {
                         <ul className="navbar-nav subMenus">
                             <li className="nav-item">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <NavLink className="nav-link active" aria-current="page" to={'/'}>Home</NavLink>
+                                <NavLink className="nav-link active" aria-current="page" to={'/ecommerce-De_Fazio/'}>Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <NavLink className="nav-link active" aria-current="page" to={'/electronics'}>Electronics</NavLink>
+                                <NavLink className="nav-link active" aria-current="page" to={'/ecommerce-De_Fazio/electronics'}>Electronics</NavLink>
                             </li>
                             <li className="nav-item">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <NavLink className="nav-link"  to={'/jewlery'}>Jewelery</NavLink>
+                                <NavLink className="nav-link"  to={'/ecommerce-De_Fazio/jewlery'}>Jewelery</NavLink>
                             </li>
                             <li className="nav-item dropdown">
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -39,9 +39,9 @@ function NavBar(props) {
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <li><NavLink className="dropdown-item"  to={'/menclothing'}>Men Clothing</NavLink></li>
+                                    <li><NavLink className="dropdown-item"  to={'/ecommerce-De_Fazio/menclothing'}>Men Clothing</NavLink></li>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <li><NavLink className="dropdown-item"  to={'/womenclothing'}>Women Clothing</NavLink></li>
+                                    <li><NavLink className="dropdown-item"  to={'/ecommerce-De_Fazio/womenclothing'}>Women Clothing</NavLink></li>
                                 </ul>
                             </li>
                             <CartWidget/>

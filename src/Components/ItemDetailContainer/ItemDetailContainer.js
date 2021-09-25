@@ -14,7 +14,7 @@ function ItemDetailContainer(props) {
 
         getProducto(`https://fakestoreapi.com/products/${id}`)
 
-    }, [])
+    }, [id])
 
     const getProducto = async (url) => {
         const respuesta = await fetch(url);

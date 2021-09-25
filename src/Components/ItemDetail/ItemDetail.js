@@ -6,22 +6,22 @@ import ItemCount from "../ItemCount/ItemCount";
 function ItemDetail(props) {
 
     let pathBack = ''
-    let pathDefault = '/'
+    let pathDefault = '/ecommerce-De_Fazio'
 
     function path(categoria, direccion) {
 
         switch (categoria) {
             case 'electronics':
-                return direccion = '/electronics'
+                return direccion = '/ecommerce-De_Fazio/electronics'
                 break;
             case 'jewelery':
-                return direccion = '/jewelery'
+                return direccion = '/ecommerce-De_Fazio/jewelery'
                 break;
             case 'men\'s clothing':
-                return direccion = '/menclothing'
+                return direccion = '/ecommerce-De_Fazio/menclothing'
                 break;
             case 'women\'s clothing':
-                return direccion = '/womenclothing"'
+                return direccion = '/ecommerce-De_Fazio/womenclothing"'
 
         }
     }

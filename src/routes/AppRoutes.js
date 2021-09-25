@@ -18,12 +18,12 @@ function AppRoutes() {
             <Router>
                 <NavBar/>
                 <Switch>
-                    <Route path='/' exact component={ItemListContainer} />
+                    <Route path='/ecommerce-De_Fazio/' exact component={ItemListContainer} />
                     <Route path='/products/:id' exact component={ItemDetailContainer} />
-                    <Route path='/jewlery' exact component={JewleryScreen} />
-                    <Route path='/electronics' exact component={ElectronicsScreen} />
-                    <Route path='/menclothing' exact component={MenClothingScreen} />
-                    <Route path='/womenclothing' exact component={WomenClothingScreen} />
+                    <Route path='/ecommerce-De_Fazio/jewlery' exact component={JewleryScreen} />
+                    <Route path='/ecommerce-De_Fazio/electronics' exact component={ElectronicsScreen} />
+                    <Route path='/ecommerce-De_Fazio/menclothing' exact component={MenClothingScreen} />
+                    <Route path='/ecommerce-De_Fazio/womenclothing' exact component={WomenClothingScreen} />
                 </Switch>
             </Router>
         </div>

@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import ItemList from "../ItemList/ItemList";
 import './ItemListContainer.css'
 import Spinner from "../Spinner/Spinner";
