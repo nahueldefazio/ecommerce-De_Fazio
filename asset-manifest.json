@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ecommerce-De_Fazio/static/css/main.8fa47d30.chunk.css",
-    "main.js": "/ecommerce-De_Fazio/static/js/main.b0c7c2d9.chunk.js",
-    "main.js.map": "/ecommerce-De_Fazio/static/js/main.b0c7c2d9.chunk.js.map",
+    "main.css": "/ecommerce-De_Fazio/static/css/main.b9e494cc.chunk.css",
+    "main.js": "/ecommerce-De_Fazio/static/js/main.fa380cd1.chunk.js",
+    "main.js.map": "/ecommerce-De_Fazio/static/js/main.fa380cd1.chunk.js.map",
     "runtime-main.js": "/ecommerce-De_Fazio/static/js/runtime-main.1d7759b8.js",
     "runtime-main.js.map": "/ecommerce-De_Fazio/static/js/runtime-main.1d7759b8.js.map",
     "static/js/2.260645ea.chunk.js": "/ecommerce-De_Fazio/static/js/2.260645ea.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.400dbddc.chunk.js": "/ecommerce-De_Fazio/static/js/3.400dbddc.chunk.js",
     "static/js/3.400dbddc.chunk.js.map": "/ecommerce-De_Fazio/static/js/3.400dbddc.chunk.js.map",
     "index.html": "/ecommerce-De_Fazio/index.html",
-    "static/css/main.8fa47d30.chunk.css.map": "/ecommerce-De_Fazio/static/css/main.8fa47d30.chunk.css.map",
+    "static/css/main.b9e494cc.chunk.css.map": "/ecommerce-De_Fazio/static/css/main.b9e494cc.chunk.css.map",
     "static/js/2.260645ea.chunk.js.LICENSE.txt": "/ecommerce-De_Fazio/static/js/2.260645ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1d7759b8.js",
     "static/js/2.260645ea.chunk.js",
-    "static/css/main.8fa47d30.chunk.css",
-    "static/js/main.b0c7c2d9.chunk.js"
+    "static/css/main.b9e494cc.chunk.css",
+    "static/js/main.fa380cd1.chunk.js"
   ]
 }
