@@ -20,7 +20,7 @@ function AppRoutes() {
                 <Switch>
                     <Route path='/ecommerce-De_Fazio/' exact component={ItemListContainer} />
                     <Route path='/products/:id' exact component={ItemDetailContainer} />
-                    <Route path='/ecommerce-De_Fazio/jewlery' exact component={JewleryScreen} />
+                    <Route path='/ecommerce-De_Fazio/jewelery' exact component={JewleryScreen} />
                     <Route path='/ecommerce-De_Fazio/electronics' exact component={ElectronicsScreen} />
                     <Route path='/ecommerce-De_Fazio/menclothing' exact component={MenClothingScreen} />
                     <Route path='/ecommerce-De_Fazio/womenclothing' exact component={WomenClothingScreen} />

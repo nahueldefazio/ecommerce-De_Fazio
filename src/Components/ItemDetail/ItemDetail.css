@@ -1,15 +1,9 @@
 .item-detail-container{
     display: flex;
 }
-
-.image-container{
-    max-width: 300px;
+img{
+    height: 70%;
 }
-
-.image-container img {
-    width: 100%;
-}
-
 .description-container{
     margin-left: 10px;
 }

@@ -3,7 +3,8 @@ ul{
 }
 .card {
     margin: 2rem auto !important;
-    border: 1px solid black;
+    border: 2px solid #1c6b8a;
+    border-radius: 10px;
 }
 
 .grilla {
@@ -21,6 +22,7 @@ ul{
     .grilla {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -29,9 +31,7 @@ ul{
         display: block;
     }
 
-    .m-4 {
-        margin: 0  !important;
-    }
-
-
 }
+
+
+

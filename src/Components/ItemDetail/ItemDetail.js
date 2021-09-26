@@ -21,7 +21,7 @@ function ItemDetail(props) {
                 return direccion = '/ecommerce-De_Fazio/menclothing'
                 break;
             case 'women\'s clothing':
-                return direccion = '/ecommerce-De_Fazio/womenclothing"'
+                return direccion = '/ecommerce-De_Fazio/womenclothing'
 
         }
     }
