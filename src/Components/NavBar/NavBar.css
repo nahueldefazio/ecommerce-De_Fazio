@@ -1,6 +1,13 @@
-.fontSize{
+.fontSize {
     font-size: 1.5rem;
 }
-li{
+
+li {
     padding: 0 2rem 0 2rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
 }

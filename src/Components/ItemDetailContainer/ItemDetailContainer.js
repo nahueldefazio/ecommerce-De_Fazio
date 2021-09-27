@@ -7,8 +7,8 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 function ItemDetailContainer(props) {
     let {id} = useParams()
 
-    const [producto, setProducto] = useState([])
-    const [rating, setRating] = useState([])
+    const [producto, setProducto] = useState(null)
+    const [rating, setRating] = useState(null)
 
     useEffect(() => {
 

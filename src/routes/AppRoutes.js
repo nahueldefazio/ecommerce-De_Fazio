@@ -15,7 +15,7 @@ import ItemDetailContainer from "../Components/ItemDetailContainer/ItemDetailCon
 function AppRoutes() {
     return (
         <div className={'h-100'}>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <NavBar/>
                 <Switch>
                     <Route path='/ecommerce-De_Fazio/' exact component={ItemListContainer} />

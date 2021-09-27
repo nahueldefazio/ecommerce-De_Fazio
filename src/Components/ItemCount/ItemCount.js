@@ -27,7 +27,7 @@ function ItemCount(props) {
         <Fragment>
             <div className={'contenedorCantidad'}>
                 <button className={'botonCantidad mas'} onClick={() => handleClickContadorMas(contador)}> +</button>
-                <input className={'cantidadInput'} type={'number'} value={contador}/>
+                <span className={'cantidadInput'}> {contador} </span>
                 <button className={'botonCantidad menos'} onClick={() => handleClickContadorMenos(contador)}> -</button>
             </div>
             <button className={'botonCarrito'} onClick={() => onAdd()}> Agregar al carrito</button>
