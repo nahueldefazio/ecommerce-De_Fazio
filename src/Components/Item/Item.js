@@ -12,7 +12,8 @@ function Item(props) {
                     <h5 className="card-title">
                         {props.title}
                     </h5>
-                    <li className="list-group-item mb-3">{props.price} U$D</li>
+                    <li className="list-group-item m-2">Stock: {props.stock}</li>
+                    <li className="list-group-item m-2">{props.price} U$D</li>
                     <Link to={`/products/${props.id}`} className="btn btn-primary">
                         More...
                     </Link>

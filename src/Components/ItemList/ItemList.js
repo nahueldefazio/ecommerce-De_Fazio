@@ -8,6 +8,7 @@ function ItemList(props) {
             {props.listaProductos.map((productos, index) => {
                 return <Item key={productos.id}
                              id={productos.id}
+                             stock={productos.rating.count}
                              title={productos.title}
                              image={productos.image}
                              price={productos.price}

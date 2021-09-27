@@ -3,7 +3,7 @@ import './ItemCount.css'
 
 function ItemCount(props) {
 
-    const [contador, setContador] = useState(1)
+    const [contador, setContador] = useState(0)
 
     const handleClickContadorMas = (contador) => {
         if (contador < props.stock) {

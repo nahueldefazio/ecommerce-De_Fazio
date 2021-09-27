@@ -8,27 +8,7 @@ function ItemDetail(props) {
 
     let history = useHistory();
 
-
-    // let pathBack = ''
     let pathDefault = '/ecommerce-De_Fazio'
-
-
-    // function path(categoria, direccion) {
-    //
-    //     switch (categoria) {
-    //         case 'electronics':
-    //             return direccion = '/ecommerce-De_Fazio/electronics'
-    //             break;
-    //         case 'jewelery':
-    //             return direccion = '/ecommerce-De_Fazio/jewelery'
-    //             break;
-    //         case 'men\'s clothing':
-    //             return direccion = '/ecommerce-De_Fazio/menclothing'
-    //             break;
-    //         case 'women\'s clothing':
-    //             return direccion = '/ecommerce-De_Fazio/womenclothing'
-    //     }
-    // }
 
     if (props.detalles) {
         return (
@@ -42,7 +22,7 @@ function ItemDetail(props) {
                         <h5>Price: {props.detalles.price}</h5>
                         <h5>Description: {props.detalles.description}</h5>
                         <h5>Rating: {props.detalles.rating.rate}</h5>
-                        <ItemCount stock={props.detalles.rating.count} initial={1}/>
+                        <ItemCount stock={props.detalles.rating.count} initial={0}/>
                     </div>
                 </div>
                 <button className={'btn btn-success m-3'} onClick={() => history.goBack()}>

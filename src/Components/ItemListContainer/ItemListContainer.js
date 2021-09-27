@@ -27,10 +27,9 @@ function ItemListContainer(props) {
         const productosArr = [];
         const respuesta = await fetch(url);
         const results = await respuesta.json();
-        for (let joyas of results) {
-            productosArr.push(joyas)
+        for (let elementos of results) {
+            productosArr.push(elementos)
         }
-        console.log(productosArr)
         setProductos(prevState => [...prevState, ...productosArr])
     }
 
