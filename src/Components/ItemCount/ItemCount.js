@@ -16,21 +16,16 @@ function ItemCount(props) {
         }
     }
 
-    const onAdd = () => {
-        if (contador !== 0) {
-            alert("Productos Agregados CORRECTAMENTE")
-        } else
-            alert("NO HAY PRODCUTOS PARA AGREGAR AL CARRITO !!!")
-    }
+
 
     return (
         <Fragment>
             <div className={'contenedorCantidad'}>
-                <button className={'botonCantidad mas'} onClick={() => handleClickContadorMas(contador)}> +</button>
-                <span className={'cantidadInput'}> {contador} </span>
                 <button className={'botonCantidad menos'} onClick={() => handleClickContadorMenos(contador)}> -</button>
+                <span className={'cantidadInput'}> {contador} </span>
+                <button className={'botonCantidad mas'} onClick={() => handleClickContadorMas(contador)}> +</button>
             </div>
-            <button className={'botonCarrito'} onClick={() => onAdd()}> Agregar al carrito</button>
+            <button className={'botonCarrito'} onClick={() => props.onAdd(contador)}> Agregar al carrito</button>
         </Fragment>
     );
 }

@@ -1,4 +1,3 @@
-import React, {Fragment} from 'react';
 import logo from '../../images/eme-shop.png'
 import '../NavBar/NavBar.css'
 import CartWidget from "./CartWidget/CartWidget";
@@ -15,7 +14,7 @@ function NavBar(props) {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 mb-lg-0">
@@ -33,6 +32,7 @@ function NavBar(props) {
                         </li>
 
                         <li className="nav-item dropdown">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link dropdown-toggle fontSize" id="navbarDropdownMenuLink"
                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Clothing
