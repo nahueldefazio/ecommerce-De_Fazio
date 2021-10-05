@@ -8,11 +8,13 @@ function Cart(props) {
     const totalCarrito = [0]
     let carritoProductos = []
 
-
     function removeProduct(item) {
-
         carritoProductos = carritoProductos.filter(producto => producto.id !== item.id)
         setCarrito(carritoProductos)
+    }
+
+    function removeAll() {
+        setCarrito([])
     }
 
     return (
@@ -21,20 +23,24 @@ function Cart(props) {
             <ul>
                 {
                     carrito.map((item, index) => {
-                        const totalProducto = item.cantidad * item.rating.count
+                        console.log(item)
+                        const totalProducto = item.cantidad * item.price
                         carritoProductos.push(item)
                         totalCarrito.push(totalProducto)
                         return (
-                            <li key={index}>
-                                {item.title}
-                                Precio unitario: ${item.rating.count}
-                                Cantidad: {item.cantidad}
-                                Precio Total: ${totalProducto}
-                                <button className={'btn btn-danger'} onClick={() => removeProduct(item)}> X </button>
-                            </li>
+                            <div>
+                                <li key={index} className={'d-flex'}>
+                                    <p className={'m-1 fw-bold'}>{item.title}</p>
+                                    <p className={'m-1'}>Precio unitario: ${item.price} - </p>
+                                    <p className={'m-1'}>Cantidad: {item.cantidad} - </p>
+                                    <p className={'m-1'}>Precio Total: ${totalProducto} - </p>
+                                    <button className={'btn btn-danger'} onClick={() => removeProduct(item)}> X</button>
+                                </li>
+                            </div>
                         )
                     })
                 }
+                {carrito.length > 0 && <button className={'btn btn-warning m-2'} onClick={removeAll}>CLEAR</button>}
             </ul>
             <h3>Total: ${totalCarrito.reduce((prev, next) => prev + next)}</h3>
         </div>

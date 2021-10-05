@@ -6,7 +6,6 @@ import {ItemContext} from "../../context/ItemContext";
 function CartWidget(props) {
 
     const {carrito} = useContext(ItemContext);
-
     const cantidadTotal = [0]
 
     return (

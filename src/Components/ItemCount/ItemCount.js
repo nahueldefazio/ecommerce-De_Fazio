@@ -16,8 +16,6 @@ function ItemCount(props) {
         }
     }
 
-
-
     return (
         <Fragment>
             <div className={'contenedorCantidad'}>

@@ -1,17 +1,15 @@
 import './App.css';
 import AppRoutes from "./routes/AppRoutes";
-import {ItemContext, ProviderCustomizado} from "./Components/context/ItemContext";
-import {useState} from "react";
+import {ProviderCustomizado} from "./Components/context/ItemContext";
+
 
 function App() {
 
-    const [carrito, setCarrito] = useState([]);
-
     return (
 
-        <ItemContext.Provider value={{carrito, setCarrito}}>
+        <ProviderCustomizado>
             <AppRoutes/>
-        </ItemContext.Provider>
+        </ProviderCustomizado>
     );
 }
 
