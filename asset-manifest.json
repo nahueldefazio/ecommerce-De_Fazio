@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ecommerce-De_Fazio/static/css/main.e0a57433.chunk.css",
-    "main.js": "/ecommerce-De_Fazio/static/js/main.8c68b3c6.chunk.js",
-    "main.js.map": "/ecommerce-De_Fazio/static/js/main.8c68b3c6.chunk.js.map",
+    "main.js": "/ecommerce-De_Fazio/static/js/main.008d2349.chunk.js",
+    "main.js.map": "/ecommerce-De_Fazio/static/js/main.008d2349.chunk.js.map",
     "runtime-main.js": "/ecommerce-De_Fazio/static/js/runtime-main.b5560626.js",
     "runtime-main.js.map": "/ecommerce-De_Fazio/static/js/runtime-main.b5560626.js.map",
     "static/js/2.222f905a.chunk.js": "/ecommerce-De_Fazio/static/js/2.222f905a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b5560626.js",
     "static/js/2.222f905a.chunk.js",
     "static/css/main.e0a57433.chunk.css",
-    "static/js/main.8c68b3c6.chunk.js"
+    "static/js/main.008d2349.chunk.js"
   ]
 }
