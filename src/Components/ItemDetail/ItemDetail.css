@@ -1,9 +1,24 @@
 .item-detail-container{
     display: flex;
 }
-img{
-    height: 70%;
+
+.image-product{
+    width: 500px;
+    height: 600px;
 }
 .description-container{
     margin-left: 10px;
+}
+
+@media screen and (max-width: 390px){
+    img{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-detail-container{
+        flex-direction: column;
+    }
 }

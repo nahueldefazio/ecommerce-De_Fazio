@@ -10,7 +10,7 @@ function ItemDetail(props) {
     let history = useHistory();
 
     const [contadorDetail, setContadorDetail] = useState(0);
-    const {removeItem, setCarrito, carrito} = useContext(ItemContext);
+    const {removeItem, setCarrito, carrito, setContador, contador} = useContext(ItemContext);
 
     const handleClick = (cantidad) => {
         setContadorDetail(cantidad)
@@ -20,25 +20,30 @@ function ItemDetail(props) {
         const itemConCantidad = {...props.detalles, cantidad}
 
         let flag = false;
+        let counter = 0
 
         if (cantidad !== 0) {
             if (carrito.length > 0) {
+                counter = 0
                 carrito.forEach(item => {
                     if (itemConCantidad.id === item.id) {
-                        console.log("SON IGUALES")
                         item.cantidad += itemConCantidad.cantidad
                         setCarrito(carrito)
                         handleClick(cantidad)
                         flag = true
                     }
+                    counter += item.cantidad
                 })
+                setContador(counter)
                 if (!flag) {
-                    console.log('else')
+                    counter = contador
+                    counter += cantidad
+                    setContador(counter)
                     setCarrito([...carrito, itemConCantidad])
                     handleClick(cantidad)
                 }
             } else {
-                console.log("Carrito vacio")
+                setContador(itemConCantidad.cantidad)
                 setCarrito([itemConCantidad])
                 handleClick(cantidad)
             }
@@ -71,7 +76,7 @@ function ItemDetail(props) {
                 <h1>{props.detalles.title}</h1>
                 <div className="item-detail-container">
                     <div className="image-container">
-                        <img src={props.detalles.image} alt={props.detalles.title}/>
+                        <img src={props.detalles.image} alt={props.detalles.title} className={'image-product'}/>
                     </div>
                     <div className="description-container">
                         <h5>Price: {props.detalles.price}</h5>

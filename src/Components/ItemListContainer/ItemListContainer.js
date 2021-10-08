@@ -11,16 +11,6 @@ function ItemListContainer(props) {
 
         getProductos('https://fakestoreapi.com/products')
 
-        // const mock_async = new Promise((resolver) => {
-        //     setTimeout(() => {
-        //         resolver(productosIniciales)
-        //     }, 2000)
-        // })
-        //
-        // mock_async
-        //     .then((resultado_de_la_promesa) => {
-        //         setProductos(resultado_de_la_promesa)
-        //     })
     }, [])
 
     const getProductos = async (url) => {

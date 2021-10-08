@@ -2,13 +2,20 @@ import logo from '../../images/eme-shop.png'
 import '../NavBar/NavBar.css'
 import CartWidget from "./CartWidget/CartWidget";
 import {NavLink} from "react-router-dom";
+import {useContext} from "react";
+import ItemContext from "../context/ItemContext";
+
 
 
 function NavBar(props) {
+
+    const {contador} = useContext(ItemContext)
+
+
     return (
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
+            <div className="container-fluid px-5">
                 <NavLink className="navbar-brand" to="/ecommerce-De_Fazio"><img src={logo}
                                                                                 alt={'Web Site Logo'}/></NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
