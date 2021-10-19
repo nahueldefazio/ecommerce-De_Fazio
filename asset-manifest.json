@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/ecommerce-De_Fazio/static/css/main.0708e815.chunk.css",
-    "main.js": "/ecommerce-De_Fazio/static/js/main.223fa5c5.chunk.js",
-    "main.js.map": "/ecommerce-De_Fazio/static/js/main.223fa5c5.chunk.js.map",
-    "runtime-main.js": "/ecommerce-De_Fazio/static/js/runtime-main.3cf59474.js",
-    "runtime-main.js.map": "/ecommerce-De_Fazio/static/js/runtime-main.3cf59474.js.map",
-    "static/js/2.226df869.chunk.js": "/ecommerce-De_Fazio/static/js/2.226df869.chunk.js",
-    "static/js/2.226df869.chunk.js.map": "/ecommerce-De_Fazio/static/js/2.226df869.chunk.js.map",
-    "static/js/3.b51bc111.chunk.js": "/ecommerce-De_Fazio/static/js/3.b51bc111.chunk.js",
-    "static/js/3.b51bc111.chunk.js.map": "/ecommerce-De_Fazio/static/js/3.b51bc111.chunk.js.map",
+    "main.js": "/ecommerce-De_Fazio/static/js/main.63f318fb.chunk.js",
+    "main.js.map": "/ecommerce-De_Fazio/static/js/main.63f318fb.chunk.js.map",
+    "runtime-main.js": "/ecommerce-De_Fazio/static/js/runtime-main.b47d96e8.js",
+    "runtime-main.js.map": "/ecommerce-De_Fazio/static/js/runtime-main.b47d96e8.js.map",
+    "static/css/2.f2512455.chunk.css": "/ecommerce-De_Fazio/static/css/2.f2512455.chunk.css",
+    "static/js/2.d74b99f6.chunk.js": "/ecommerce-De_Fazio/static/js/2.d74b99f6.chunk.js",
+    "static/js/2.d74b99f6.chunk.js.map": "/ecommerce-De_Fazio/static/js/2.d74b99f6.chunk.js.map",
+    "static/js/3.aa3ce9cc.chunk.js": "/ecommerce-De_Fazio/static/js/3.aa3ce9cc.chunk.js",
+    "static/js/3.aa3ce9cc.chunk.js.map": "/ecommerce-De_Fazio/static/js/3.aa3ce9cc.chunk.js.map",
     "index.html": "/ecommerce-De_Fazio/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/ecommerce-De_Fazio/static/css/2.f2512455.chunk.css.map",
     "static/css/main.0708e815.chunk.css.map": "/ecommerce-De_Fazio/static/css/main.0708e815.chunk.css.map",
-    "static/js/2.226df869.chunk.js.LICENSE.txt": "/ecommerce-De_Fazio/static/js/2.226df869.chunk.js.LICENSE.txt"
+    "static/js/2.d74b99f6.chunk.js.LICENSE.txt": "/ecommerce-De_Fazio/static/js/2.d74b99f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3cf59474.js",
-    "static/js/2.226df869.chunk.js",
+    "static/js/runtime-main.b47d96e8.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.d74b99f6.chunk.js",
     "static/css/main.0708e815.chunk.css",
-    "static/js/main.223fa5c5.chunk.js"
+    "static/js/main.63f318fb.chunk.js"
   ]
 }
