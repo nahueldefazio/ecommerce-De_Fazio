@@ -9,13 +9,7 @@ function ItemListContainer(props) {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        // getProductos('https://fakestoreapi.com/products')
-        //Tengo una referencia de la db
         const db = firestore
-
-        //.get() .where().get() .doc() .add()
-
-        //Obtengo la coleccion de productos
         const coleccion = db.collection("items")
         const consulta = coleccion.get()
         consulta.then((resultado) => {
@@ -26,23 +20,12 @@ function ItemListContainer(props) {
                     ...producto.data()
                 }
                 ArrayProductos.push(producto_final)
-                console.log(ArrayProductos)
             })
             setProductos(prevState => [...prevState, ...ArrayProductos])
         })
-
     }, [])
 
-    // const getProductos = async (url) => {
-    //     const productosArr = [];
-    //     const respuesta = await fetch(url);
-    //     const results = await respuesta.json();
-    //     for (let elementos of results) {
-    //         productosArr.push(elementos)
-    //         console.log(elementos)//Objeto
-    //     }
-    //     setProductos(prevState => [...prevState, ...productosArr])
-    // }
+
 
     if (productos.length > 0) {
         return (
