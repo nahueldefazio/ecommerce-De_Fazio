@@ -2,18 +2,11 @@ import logo from '../../images/eme-shop.png'
 import '../NavBar/NavBar.css'
 import CartWidget from "./CartWidget/CartWidget";
 import {NavLink} from "react-router-dom";
-import {useContext} from "react";
-import ItemContext from "../context/ItemContext";
 
 
-
-function NavBar(props) {
-
-    const {contador} = useContext(ItemContext)
-
+function NavBar() {
 
     return (
-
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid px-5">
                 <NavLink className="navbar-brand" to="/ecommerce-De_Fazio"><img src={logo}
@@ -37,7 +30,6 @@ function NavBar(props) {
                             <NavLink activeClassName="active" className="nav-link fontSize"
                                      to={'/ecommerce-De_Fazio/jewelery'}>Jewelery</NavLink>
                         </li>
-
                         <li className="nav-item dropdown">
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link dropdown-toggle fontSize" id="navbarDropdownMenuLink"

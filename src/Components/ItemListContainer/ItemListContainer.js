@@ -4,13 +4,12 @@ import './ItemListContainer.css'
 import Spinner from "../Spinner/Spinner";
 import {firestore} from "../../firebase";
 
-function ItemListContainer(props) {
+function ItemListContainer() {
 
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        const db = firestore
-        const coleccion = db.collection("items")
+        const coleccion = firestore.collection("items")
         const consulta = coleccion.get()
         consulta.then((resultado) => {
             const ArrayProductos = []
@@ -26,7 +25,6 @@ function ItemListContainer(props) {
     }, [])
 
 
-
     if (productos.length > 0) {
         return (
             <div>
@@ -38,9 +36,7 @@ function ItemListContainer(props) {
             </div>
         );
     } else {
-        return (
-            <Spinner/>
-        )
+        return <Spinner/>
     }
 
 }

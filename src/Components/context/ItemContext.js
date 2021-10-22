@@ -7,10 +7,13 @@ export const ProviderCustomizado = ({children}) => {
     const [carrito, setCarrito] = useState([]);
     const [contador, setContador] = useState(0);
 
+    const [compra, setCompra] = useState("");
+
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
 
     const valorDelContexto = {
         carrito,
@@ -19,7 +22,9 @@ export const ProviderCustomizado = ({children}) => {
         setContador,
         show, setShow,
         handleClose,
-        handleShow
+        handleShow,
+        compra,
+        setCompra,
     }
 
     return(

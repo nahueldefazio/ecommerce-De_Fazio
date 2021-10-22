@@ -3,21 +3,13 @@ import ItemList from "../ItemList/ItemList";
 import Spinner from "../Spinner/Spinner";
 import {firestore} from "../../firebase";
 
-function ElectronicsScreen(props) {
+function ElectronicsScreen() {
 
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
 
-        // getProductos('https://fakestoreapi.com/products/category/electronics')
-
-        //Tengo una referencia de la db
-        const db = firestore
-
-        //.get() .where().get() .doc() .add()
-
-        //Obtengo la coleccion de productos
-        const coleccion = db.collection("items")
+        const coleccion = firestore.collection("items")
         const consulta = coleccion.where("category", "==", "electronics").get()
         consulta.then((resultado) => {
             const ArrayProductos = []
@@ -27,29 +19,15 @@ function ElectronicsScreen(props) {
                     ...producto.data()
                 }
                 ArrayProductos.push(producto_final)
-                console.log(ArrayProductos)
             })
             setProductos(prevState => [...prevState, ...ArrayProductos])
         })
-
-
-
     }, [])
-
-    // const getProductos = async (url) => {
-    //     const productosArr = [];
-    //     const respuesta = await fetch(url);
-    //     const results = await respuesta.json();
-    //     for (let joyas of results) {
-    //         productosArr.push(joyas)
-    //     }
-    //     setProductos(prevState => [...prevState, ...productosArr])
-    // }
 
     if (productos.length > 0) {
         return (
             <div>
-                <h1 className={'m-3'} >Electronics</h1>
+                <h1 className={'m-3'}>Electronics</h1>
                 <hr/>
                 <ul className={'grilla'}>
                     <ItemList listaProductos={productos}/>

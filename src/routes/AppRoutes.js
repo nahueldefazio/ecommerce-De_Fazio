@@ -12,6 +12,7 @@ import MenClothingScreen from "../Components/MenClothingScreen/MenClothingScreen
 import WomenClothingScreen from "../Components/WomenClothingScreen/WomenClothingScreen";
 import ItemDetailContainer from "../Components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "../Components/Cart/Cart";
+import ContactoDeCompra from "../Components/ContactoDeCompra/ContactoDeCompra";
 
 function AppRoutes() {
     return (
@@ -26,6 +27,7 @@ function AppRoutes() {
                     <Route path='/ecommerce-De_Fazio/menclothing' exact component={MenClothingScreen} />
                     <Route path='/ecommerce-De_Fazio/womenclothing' exact component={WomenClothingScreen} />
                     <Route path='/ecommerce-De_Fazio/cart' exact component={Cart} />
+                    <Route path='/ecommerce-De_Fazio/confirm' exact component={ContactoDeCompra} />
                 </Switch>
             </Router>
         </div>

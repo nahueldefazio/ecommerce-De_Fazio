@@ -3,20 +3,13 @@ import ItemList from "../ItemList/ItemList";
 import Spinner from "../Spinner/Spinner";
 import {firestore} from "../../firebase";
 
-function JewleryScreen(props) {
+function JewleryScreen() {
 
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        // getProductos('https://fakestoreapi.com/products/category/jewelery')
 
-        //Tengo una referencia de la db
-        const db = firestore
-
-        //.get() .where().get() .doc() .add()
-
-        //Obtengo la coleccion de productos
-        const coleccion = db.collection("items")
+        const coleccion = firestore.collection("items")
         const consulta = coleccion.where("category", "==", "jewelery").get()
         consulta.then((resultado) => {
             const ArrayProductos = []
@@ -26,22 +19,11 @@ function JewleryScreen(props) {
                     ...producto.data()
                 }
                 ArrayProductos.push(producto_final)
-                console.log(ArrayProductos)
             })
             setProductos(prevState => [...prevState, ...ArrayProductos])
         })
-
     }, [])
 
-    // const getProductos = async (url) => {
-    //     const productosArr = [];
-    //     const respuesta = await fetch(url);
-    //     const results = await respuesta.json();
-    //     for (let joyas of results) {
-    //         productosArr.push(joyas)
-    //     }
-    //     setProductos(prevState => [...prevState, ...productosArr])
-    // }
 
     if (productos.length > 0) {
         return (
@@ -54,9 +36,8 @@ function JewleryScreen(props) {
             </div>
         );
     } else {
-        return (
-            <Spinner/>
-        )
+        return <Spinner/>
+
     }
 }
 

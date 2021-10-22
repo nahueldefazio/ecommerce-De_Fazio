@@ -5,7 +5,7 @@ function ItemList(props) {
 
     return (
         <Fragment>
-            {props.listaProductos.map((productos, index) => {
+            {props.listaProductos.map((productos) => {
                 return <Item key={productos.id}
                              id={productos.id}
                              stock={productos.rating.count}

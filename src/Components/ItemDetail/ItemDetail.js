@@ -4,13 +4,15 @@ import './ItemDetail.css'
 import ItemCount from "../ItemCount/ItemCount";
 import Spinner from "../Spinner/Spinner";
 import {ItemContext} from "../context/ItemContext";
+import swal from 'sweetalert';
+
 
 function ItemDetail(props) {
 
     let history = useHistory();
 
     const [contadorDetail, setContadorDetail] = useState(0);
-    const {removeItem, setCarrito, carrito, setContador, contador} = useContext(ItemContext);
+    const {setCarrito, carrito, setContador, contador} = useContext(ItemContext);
 
     const handleClick = (cantidad) => {
         setContadorDetail(cantidad)
@@ -47,25 +49,15 @@ function ItemDetail(props) {
                 setCarrito([itemConCantidad])
                 handleClick(cantidad)
             }
-
         } else {
-            alert("NO HAY PRODCUTOS PARA AGREGAR AL CARRITO !!!")
+            swal({
+                title: "Empty",
+                text: "You cannot buy cero (0) products, please add at least one.",
+                icon: "warning",
+                button: "Thank You!",
+            });
         }
     }
-
-    // const itemConCantidad = {...props.detalles, cantidad}
-    // if (cantidad !== 0) {
-    //     if (itemConCantidad.id === carrito.id){
-    //         console.log("SON IGUALES")
-    //     }
-    //     setCarrito(prev => {
-    //         return [...prev, itemConCantidad]
-    //     })
-    //     handleClick(cantidad)
-    // }else {
-    //                 alert("NO HAY PRODCUTOS PARA AGREGAR AL CARRITO !!!")
-    //}
-
 
     let pathDefault = '/ecommerce-De_Fazio'
     let pathCart = '/ecommerce-De_Fazio/cart'
@@ -92,7 +84,6 @@ function ItemDetail(props) {
                             <Link className="btn btn-success m-3" to={pathCart}>End Buy</Link>
                         </Fragment>
                         }
-
                     </div>
                 </div>
                 <button className={'btn btn-success m-3'} onClick={() => history.goBack()}>
@@ -102,9 +93,7 @@ function ItemDetail(props) {
             </div>
         );
     } else {
-        return (
-            <Spinner/>
-        )
+        return <Spinner/>
     }
 }
 

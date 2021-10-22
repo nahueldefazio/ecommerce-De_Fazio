@@ -1,18 +1,15 @@
-import React, {Fragment, useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import './CartWidget.css'
 import {Link} from "react-router-dom";
 import {ItemContext} from "../../context/ItemContext";
 
-function CartWidget(props) {
+function CartWidget() {
 
-    const {carrito, contador, setContador} = useContext(ItemContext);
-    const cantidadTotal = [0]
-
+    const { contador} = useContext(ItemContext);
 
     return (
         <div  style={{
             visibility: contador === 0 ? "hidden" : "visible",
-
         }} className={'d-flex align-items-center'}>
             <li>
                 <Link to={'/ecommerce-De_Fazio/cart'} className={'material-icons cartIcon'}>shopping_cart</Link>

@@ -1,13 +1,10 @@
 import {ItemContext} from "../context/ItemContext";
-import {useContext, useState} from "react";
-import {Link} from "react-router-dom";
-import {Button} from "react-bootstrap";
-import RegistroCompra from "../RegistroCompra/RegistroCompra";
+import {useContext} from "react";
+import {Link, NavLink} from "react-router-dom";
 
+function Cart() {
 
-function Cart(props) {
-
-    const {carrito, setCarrito, setContador, contador, handleClose, handleShow, show} = useContext(ItemContext);
+    const {carrito, setCarrito, setContador, contador, handleShow} = useContext(ItemContext);
 
     const totalCarrito = [0]
     let carritoProductos = []
@@ -16,18 +13,16 @@ function Cart(props) {
         carritoProductos = carritoProductos.filter(producto => producto.id !== item.id)
         setCarrito(carritoProductos)
         let counter = 0
-        carritoProductos.map(item2 => {
-            counter += item2.cantidad
+        carritoProductos.map((item2) => {
+            return counter += item2.cantidad
         })
         setContador(counter)
-
     }
 
     function removeAll() {
         setCarrito([])
         setContador(0)
     }
-
 
     if (contador) {
         return (
@@ -40,8 +35,9 @@ function Cart(props) {
                             carritoProductos.push(item)
                             totalCarrito.push(totalProducto)
                             return (
-                                <div>
-                                    <li key={index} className={'d-flex'}>
+                                <div key={index} className={'m-4'}>
+                                    <li  className={'d-flex'}>
+                                        <img src={item.image} style={{width: "100px"}} />
                                         <p className={'m-1 fw-bold'}>{item.title}</p>
                                         <p className={'m-1'}>Precio unitario: ${item.price} - </p>
                                         <p className={'m-1'}>Cantidad: {item.cantidad} - </p>
@@ -53,13 +49,13 @@ function Cart(props) {
                             )
                         })
                     }
-                    {carrito.length > 0 && <button className={'btn btn-warning m-2'} onClick={removeAll}>CLEAR</button>}
+
                 </ul>
+                {carrito.length > 0 && <button className={'btn btn-warning m-2'} onClick={removeAll}>CLEAR CART</button>}
                 <h3>Total: ${totalCarrito.reduce((prev, next) => prev + next)}</h3>
-                <Button variant="primary" onClick={handleShow} className={'m-3'}>
-                    Finalizar Compra
-                </Button>
-                <RegistroCompra/>
+                <NavLink  className={'btn btn-success m-3'} onClick={handleShow}  to={'/ecommerce-De_Fazio/confirm'}>
+                    End purchase
+                </NavLink>
             </div>
         );
     } else {

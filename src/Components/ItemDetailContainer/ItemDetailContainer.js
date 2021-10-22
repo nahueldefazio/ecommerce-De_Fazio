@@ -5,17 +5,13 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import {firestore} from "../../firebase";
 
 
-function ItemDetailContainer(props) {
+function ItemDetailContainer() {
     let {id} = useParams()
-
-
     const [producto, setProducto] = useState(null)
-    const [rating, setRating] = useState(null)
 
     useEffect(() => {
 
-        const db = firestore
-        const coleccion = db.collection("items")
+        const coleccion = firestore.collection("items")
         const consulta = coleccion.get()
         consulta.then((resultado) => {
             resultado.docs.forEach(producto => {
@@ -23,28 +19,21 @@ function ItemDetailContainer(props) {
                     id: producto.id,
                     ...producto.data()
                 }
-                if (producto_final.id === id){
+                if (producto_final.id === id) {
                     setProducto(producto_final)
                 }
             })
         })
     }, [id])
 
-
-
-
     if (producto) {
-        return (
-            <div>
-                <ItemDetail id={id}
-                            detalles={producto}
-                            rating={rating}/>
-            </div>
-        );
+        return <ItemDetail id={id}
+                           detalles={producto}
+        />
+
     } else {
-        return (
-            <Spinner/>
-        )
+        return <Spinner/>
+
     }
 }
 

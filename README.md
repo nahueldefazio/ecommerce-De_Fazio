@@ -1,73 +1,78 @@
-# Bibliotecas utilizadas:
-Por ahora solo utilice Boostrap y Google Icons pero sin instalacion de bibliotecas solo importandolas desde el index.html
+# ReactJS - Proyecto e-commerce
 
-# Getting Started with Create React App
+[Sitio Web](https://nahueldefazio.github.io/ecommerce-De_Fazio/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Presentación
 
-## Available Scripts
+Soy Nahuel De Fazio, programador Front-End. Este es mi proyecto final del curso de ReactJS. El objetivo fue crear un
+ecommerce con React, con bibliotecas de carácter obligatorias como React-router-dom para la navegación (SPA) del sitio y
+Firebase como base de datos. He intentado ir un poco más de lo pedido en el curso, por lo que use otras bibliotecas como
+Formik y Yup para la validación de formularios. Para la parte de UI utilicé Sweetalert para las alertas y
+react-bootstrap para los distintos estilos de las páginas. Dicha app fue hecha a base de componentes reutilizables,
+hooks (useState, useEffect, useParams, useContext) y mucha lógica.
 
-In the project directory, you can run:
+# App
 
-### `npm start`
+### Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para la instalación de las dependencias requeridas, ejecutar `npm install`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Uso de la aplicación
 
-### `npm test`
+Para iniciar la aplicacion, ejecutar `npm start` y abrir http://localhost:3000 en cualquier navegador.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Bibliotecas usadas (dependencias):
 
-### `npm run build`
+- Firebase : Version 8.9.1. Para su instalación utilicé el comando `npm i firebase@8.9.1` . Esta biblioteca fue usada
+  para realizar peticiones GET y POST. GET para obtener los datos de los productos que se encuentran en la base de datos
+  de Firebase y POST para enviar los datos del formulario de compra desde de aplicación hacia Firebase.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Formik : Version 2.2.9, la más actual hasta la fecha (22/10/2021), con `npm i formik` se instala dicha biblioteca. Fue
+  utilizada para la validación del formulario de compra al finalizar la misma.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ---
 
-### `npm run eject`
+- React-bootstrap: Version 2.0.0. Esta biblioteca contiene componentes realizados por bootstrap con el fin de ahorrarnos
+  codigo y por ende tiempo. Fue utilizado principalmente al momento de realizar el componente PopUp (modal que verífica
+  tu compra si fue exitosa).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- ---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Bootstrap : Version 5.1.1. Esta biblioteca funciona de manera simultánea con React-bootstrap, ya que trae por
+  defecto (en su instalación) los archivos CSS (bootstrap) y JS (popper y bootstrap).
+  `npm install react-bootstrap bootstrap@5.1.1` es el comando para instalar el paquete completo.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- ---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React-router-dom : Version 5.3.0, con el comando `npm install react-router-dom` se realiza la instalación. El uso de
+  esta biblioteca se ve reflejado al momento de navegar por el sitio, en donde vemos que el sitio nunca se recarga para
+  ir otra página interna, sino que funciona de manera SPA. Utilizado principalmente con el componente Nav (barra de
+  navegacion). Pero también se ve en algunos botones con el fin de realizar un redirection a la página requerida.
 
-## Learn More
+- ---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Sweetalert : Version 2.1.2, comando de instalación `npm install sweetalert --save`.Fue usado solamente con el fin de
+  notificarle al usuario que estaba agregando la cantidad de cero (0) productos al carrito, lo cual es inválido.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ---
 
-### Code Splitting
+- Yup : Version 0.32.11, comando de instalación `npm i yup`. Fue utilizado al momento de mostrar los mensajes de errores
+  personalizados en los formularios. Funciona en simultaneidad con Formik.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ---
 
-### Analyzing the Bundle Size
+- Gh-pages: Version 3.2.3. Lo utilicé para poder subir mi código, el cual se encuentra alojado en el repositorio de
+  GitHub, ya compilado a un sitio web gratis. No hay necesidad de instalar dicha biblioteca para el correcto funcionamiento
+  de la aplicación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Gracias por visitar mi proyecto 
 
-### Making a Progressive Web App
+## Si queres ver mas proyectos mios, te dejo mi Portfolio 
+[PORTFOLIO](https://nahueldefazio.github.io/Portfolio/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
