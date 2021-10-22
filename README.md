@@ -13,6 +13,10 @@ hooks (useState, useEffect, useParams, useContext) y mucha lógica.
 
 # App
 
+### Video --> [Enlace del video a YouTube](https://www.youtube.com/watch?v=mfuIqNLWb6w)
+
+
+
 ### Instalación
 
 Para la instalación de las dependencias requeridas, ejecutar `npm install`
@@ -66,6 +70,7 @@ Para iniciar la aplicacion, ejecutar `npm start` y abrir http://localhost:3000 e
 - Gh-pages: Version 3.2.3. Lo utilicé para poder subir mi código, el cual se encuentra alojado en el repositorio de
   GitHub, ya compilado a un sitio web gratis. No hay necesidad de instalar dicha biblioteca para el correcto funcionamiento
   de la aplicación.
+
 
 # Gracias por visitar mi proyecto 
 
