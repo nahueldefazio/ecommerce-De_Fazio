@@ -9,7 +9,7 @@ ecommerce con React, con bibliotecas de carácter obligatorias como React-router
 Firebase como base de datos. He intentado ir un poco más de lo pedido en el curso, por lo que use otras bibliotecas como
 Formik y Yup para la validación de formularios. Para la parte de UI utilicé Sweetalert para las alertas y
 react-bootstrap para los distintos estilos de las páginas. Dicha app fue hecha a base de componentes reutilizables,
-hooks (useState, useEffect, useParams, useContext) y mucha lógica.
+y hooks (useState, useEffect, useParams, useContext).
 
 # App
 

@@ -37,7 +37,7 @@ function Cart() {
                             return (
                                 <div key={index} className={'m-4'}>
                                     <li  className={'d-flex'}>
-                                        <img src={item.image} style={{width: "100px"}} />
+                                        <img src={item.image} style={{width: "100px"}}  alt={item.title}/>
                                         <p className={'m-1 fw-bold'}>{item.title}</p>
                                         <p className={'m-1'}>Precio unitario: ${item.price} - </p>
                                         <p className={'m-1'}>Cantidad: {item.cantidad} - </p>
