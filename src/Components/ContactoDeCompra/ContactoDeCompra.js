@@ -6,6 +6,7 @@ import {ItemContext} from "../context/ItemContext";
 import Spinner from "../Spinner/Spinner";
 import PopUp from "../PopUp/PopUp";
 import "./ContactoCompra.css"
+
 function ContactoDeCompra() {
 
     const {carrito, setCarrito, contador, setContador} = useContext(ItemContext);
